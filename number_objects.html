@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>NUMBER OBJECTS</h1>
+    <script>
+        let x=10;
+        let n=6.786543;
+        let y=new Number(10);
+        let z=new Number(10)
+        let s=x.toString()
+        let e=x.toExponential(4)
+       let f=x.toFixed(3)
+       let g=n.toPrecision(3)
+        document.writeln("Exponential of : "+e+"<br>");
+        document.writeln("Exponential of : "+e+"<br>");
+   
+        document.writeln("toPrecision of : "+g+"<br>");
+       
+
+        document.writeln("Tye of g: "+typeof e+"<br>");
+        document.writeln("Tye of y: "+typeof y+"<br>");
+        document.writeln("Tye of z: "+typeof z+"<br>");
+        document.writeln("Tye of s: "+typeof s+"<br>");
+        document.writeln("x==y: "+(x==y)+"<br>");
+        document.writeln("x===y: "+(x===y)+"<br>");
+        document.writeln("z==y: "+(z==y)+"<br>");
+        document.writeln("z===y: "+(z===y)+"<br>");
+
+        let a=Number(e)
+        let v=parseInt(f)
+        let u=parseFloat(n)
+        document.writeln("Tye of a: "+typeof a+"<br>");
+        document.writeln("Tye of v: "+typeof v+"<br>");
+        document.writeln("Tye of n: "+typeof n+"<br>");
+
+
+document.writeln("<h1>NUMBER PROPERTIES</h1>")
+document.writeln("MIN_VALUE:"+Number.MAX_VALUE+"<br>")
+    </script>
+</body>
+</html>

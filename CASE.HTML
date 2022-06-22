@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1>PERCENT & GRADE CALCULATOR</h1>
+    Max Marks:<input type="number" id="mm"><br><br>
+    Obtained Marks:<input type="number" id="om"><br><br>
+    <button type="button"  onclick="pg()">SUBMIT</button><br><br>
+    Percentage:<input type="text" id="perc"><br><br>
+    Grade:<input type="text" id="grade"><br><br>
+    <script>
+        function pg()
+        {
+        document.getElementById("perc").value=(document.getElementById("om").value/document.getElementById("mm").value)*100
+            var Percentage=document.getElementById("perc").value;
+            var g;
+            switch(Math.floor(Percentage/10))
+            {
+                    case 9:
+                    case 8:   g="Outstanding";
+                                            break;
+                    case 7:   g="Distinction";
+                                            break;
+                   case 6:   g="Good";
+                                            break;  
+                   case 5:   g="Average";
+                                            break; 
+                    case 4:   g="Pass";
+                                            break; 
+                    default:   g="Not yet";   
+                                           break;                 
+            }
+            document.getElementById("grade").value=g;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative statements</title>
+    <script>
+        let j=1;res1="";
+      while(j<=100)
+     
+        {
+             res+=j+""
+             if(j%2==0)
+             res1+="<br>"
+             j++;
+        }
+        document.getElementById("res1").innerHTML=res1;
+    </script>
+</head>
+<body>
+    <h1>ITERATIVE STATEMENTS</h1>
+    <h2 id="res"></h2>
+    <h3 id="res1"></h3>
+    <script>
+        let i;res="";
+        for(i=1;i<=10;i++)
+     
+        {
+             res+=i+""
+             if(i%10==0)
+             res+="<br>"
+        }
+        document.getElementById("res").innerHTML=res;
+    </script>
+
+</body>
+</html>

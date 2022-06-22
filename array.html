@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAYS</h1>
+    <script>
+        document.writeln("<h2>")
+        let a=[10,20,30,40]
+        document.writeln(a+"<br>")
+        document.writeln(typeof a +"<br>")
+        var b=new Array(50,60,70,80)
+        document.writeln(b+"<br>")
+        let c=[100]
+        document.writeln(c+"<br>")
+        var d=new Array(100)
+        document.writeln(d+"<br>")
+        //Length of an array
+        document.writeln("Length of array a is "+a.length+"<br>")
+
+        //Accessing elements in an array
+
+        document.writeln("First element "+a[0]+"<br>")
+        document.writeln("Second  element "+a[1]+"<br>")
+        //Printing elements of the array
+        document.writeln(a+"<br>")
+
+
+        //Named index in arrays
+        let e={"name":"abc","no":123,"perc":90}
+        document.writeln(e.name+"<br>"+e.no+"<br>"+e.perc+"<br>")
+        for(i=0;i<a.length;i++)
+        {
+            document.writeln("a["+i+"]="+a[i] + "<br>")
+
+        
+        }
+        //Reassignment
+        a[0]=200
+        a[5]=45
+        document.writeln("a="+a+"<br>")
+        //Deleting elements
+        document.writeln("Length of array A is "+a.length+"<br>")
+
+        delete a[3]
+        document.writeln("a="+a+"<br>")
+        document.writeln("Length of array A after deleting element with index 3 is "+a.length+"<br>")
+       
+
+
+
+        for(i=0;i<a.length;i++)
+        {
+            document.writeln("a["+i+"]="+a[i] + "<br>")
+
+        }
+        document.writeln(typeof a+"<br>")
+        document.writeln(Array.isArray(a)+"<br>")
+
+    </script>
+</body>
+</html>

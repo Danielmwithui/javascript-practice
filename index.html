@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <style>
+        #text{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change HTML content</h1>
+    <h2 id="hcontent">Hello Guest</h2>
+    <h3>Welcome to javascript</h3>
+    <button type="button" onclick='document.getElementById("hcontent").innerHTML="Hello Daniel!"' >Daniel</button>
+
+    <button type="button" onclick='document.getElementById("hcontent").innerHTML="Hello Felisters!"' >Felisters</button>
+    
+    <h1>CHANGE IN ATTRIBUTES</h1>
+    <img id="image" src="goat.jpg" width="300" height="200" > <br><br>
+    <button type="button" onclick='document.getElementById("image").src="goat.jpg"' >Goat</button>
+
+    <button type="button" onclick='document.getElementById("image").src="cow.jpg"' >Cow</button>
+    <button type="button" onclick='document.getElementById("image").src="dog.jpg"' >Dog</button>
+
+    <h1>CHANGING CSS</h1>
+    <h2 id="text">Introduction to Javascript</h2>
+    
+    <script src="index.js"></script>
+    
+    <button type="button" onclick='document.getElementById("text").style.color="green"' >Green</button>
+    <button type="button" onclick='document.getElementById("text").style.color="yellow"' >Yellow</button>
+
+<h1>HIDE AND DISPLAY CONTENT</h1>
+<h2 id="hide_display">This will demonstrate hiding and displaying the content</h2>
+
+<button type="button" onclick='document.getElementById("hide_display").style.display="none"' >Hide</button>
+<button type="button" onclick='document.getElementById("hide_display").style.display="block"' >Show</button>
+
+
+</body>
+</html>
